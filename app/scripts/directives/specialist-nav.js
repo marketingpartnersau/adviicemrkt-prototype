@@ -11,7 +11,7 @@ angular.module('advmPrototypeApp')
     return {
       templateUrl: 'views/directives/specialist-nav.html',
       restrict: 'E',
-      link: function postLink(scope, element, attrs) {
+      link: function postLink() {
         
       }
     };

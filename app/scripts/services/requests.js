@@ -12,7 +12,7 @@ angular.module('advmPrototypeApp')
     // Service logic
     // ...
 
-    var meaningOfLife = 42;
+    // var meaningOfLife = 42;
 
     // Public API here
     return {

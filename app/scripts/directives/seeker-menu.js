@@ -11,8 +11,8 @@ angular.module('advmPrototypeApp')
     return {
       templateUrl: 'views/directives/seeker-menu.html',
       restrict: 'E',
-      link: function postLink(scope, element, attrs) {
-        // element.text('this is the seekerMenu directive');
+      link: function postLink() {
+
       }
     };
   });

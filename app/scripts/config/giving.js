@@ -52,7 +52,7 @@ angular
 					controller: function($scope, request){
 						$scope.request = request;
 					}
-				})
+				});
 			};
 		}
 	})
@@ -70,5 +70,5 @@ angular
 	.state('giving.clients', {
 		url: '/my-clients',
 		templateUrl: 'views/giving/clients.html'
-	})
+	});
   });

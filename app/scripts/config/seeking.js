@@ -63,5 +63,5 @@ angular
 	.state('seeking.pitch', {
 		url: '/pitch',
 		templateUrl: 'views/seeking/pitch.html'
-	})
+	});
   });

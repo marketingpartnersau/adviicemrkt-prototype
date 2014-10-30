@@ -9,10 +9,10 @@
 angular.module('advmPrototypeApp')
   .directive('seekerNav', function () {
     return {
-      template: '<div></div>',
+      templateUrl: 'views/directives/seeker-nav.html',
       restrict: 'E',
-      link: function postLink(scope, element, attrs) {
-        element.text('this is the seekerNav directive');
+      link: function postLink() {
+        
       }
     };
   });
