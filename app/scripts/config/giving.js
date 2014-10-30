@@ -7,7 +7,7 @@ angular
   	.state('giving', {
 	  url: '/giving',
 	  abstract: true,
-	  templateUrl: 'views/giving/giving.html',
+	  templateUrl: 'views/giving/_parent.html',
 	  controller: 'GivingCtrl'
 	})
 
@@ -55,6 +55,11 @@ angular
 				})
 			};
 		}
+	})
+
+	.state('giving.dashboard', {
+		url: '/dashboard',
+		template: '<h2>This is the dashboard</h2>'
 	})
 
 	.state('giving.pitches', {

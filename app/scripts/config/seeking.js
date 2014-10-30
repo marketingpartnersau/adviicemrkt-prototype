@@ -7,7 +7,7 @@ angular
   	.state('seeking', {
 	  url: '/seeking',
 	  abtract: true,
-	  templateUrl: 'views/seeking/seeking.html'
+	  templateUrl: 'views/seeking/_parent.html'
 	})
 
 	.state('seeking.query', {
@@ -43,6 +43,11 @@ angular
 	.state('seeking.newRequest.confirm', {
 		url: '/confirm',
 		templateUrl: 'views/seeking/new-request-confirmed.html'
+	})
+
+	.state('seeking.dashboard', {
+		url: '/dashboard',
+		templateUrl: 'views/seeking/dashboard.html'
 	})
 
 	.state('seeking.requests', {
