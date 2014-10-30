@@ -11,7 +11,8 @@
 angular
   .module('advmPrototypeApp', [
     'ui.router',
-    'mm.foundation'
+    'mm.foundation',
+    'duScroll'
   ])
   .config(function ($stateProvider, $urlRouterProvider) {
 
@@ -22,6 +23,11 @@ angular
         url: '/',
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
+      })
+
+      .state('about', {
+        url: '/about',
+        templateUrl: 'views/about.html'
       });
   })
 

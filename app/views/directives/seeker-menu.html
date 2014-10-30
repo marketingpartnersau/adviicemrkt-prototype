@@ -1,5 +1,14 @@
 <aside class="left-off-canvas-menu">
-    <ul>
-        <li><a href="#">Left Sidebar</a></li>
+	<div class="mini-profile panel">
+		<p><img src="http://placehold.it/50/50" class="round" alt=""> <em>Spiros</em></p>
+		<alert ng-init="notificationsShown = true" ng-show="notificationsShown" type="alert" close="notificationsShown = false"><i class="fa fa-bell"></i> 5 notifications</alert>
+	</div>
+    <ul class="button-group stack">
+        <li><a class="button" ui-sref="seeking.dashboard.requests"><i class="fa fa-search"></i> My Requests</a></li>
+        <li><a class="button" ui-sref="seeking.dashboard.requests.new"><i class="fa fa-search-plus"></i> New Request</a></li>
+        <li><a class="button" ui-sref="seeking.dashboard.pitches"><i class="fa fa-exclamation-circle"></i> Pitches</a></li>
+        <li><a class="button" ui-sref="seeking.dashboard.myTeam"><i class="fa fa-users"></i> My Team</a></li>
+        <li><a class="button" ui-sref="seeking.dashboard.profile"><i class="fa fa-user"></i> My profile</a></li>
+        <li><a class="secondary button" ui-sref="logout"><i class="fa fa-sign-out"></i> Log out</a></li>
     </ul>
 </aside>

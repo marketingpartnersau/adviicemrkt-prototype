@@ -42,7 +42,10 @@ angular
 
 	.state('seeking.newRequest.confirm', {
 		url: '/confirm',
-		templateUrl: 'views/seeking/new-request-confirmed.html'
+		templateUrl: 'views/seeking/new-request-confirmed.html',
+		controller: function($scope){
+			$scope.states.registered = true;
+		}
 	})
 
 	.state('seeking.dashboard', {
