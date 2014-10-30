@@ -1,0 +1,28 @@
+<h3>Advice Opportunities</h3>
+<p>Here are people who are seeking advice in your expertise, waiting to be pitched to!</p>
+{{$state.current.name}}
+<ul class="no-bullet">
+	<li ng-repeat="request in requests">
+		<div class="row">
+			<div class="small-9 columns">
+				<h4><strong>{{request.title}}</strong></h4>
+				<em>{{request.name}}</em>
+			</div>
+			<div class="small-3 columns">
+				<img src="http://placehold.it/50/50" alt="">
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="small-12 columns">
+				<p><small><strong>Skills required:</strong> Rural Sales and Marketing, Financial Planning, Making Coffee</small></p>
+				<p><a ng-show="$state.current.name == 'giving.register.opportunities'" ui-sref="giving.register.signup" class="tiny radius rounded button">Pitch to {{ request.name }}</a></p>
+				<p><a ng-show="$state.current.name == 'giving.opportunities'" ng-click="newPitch(request)" class="tiny radius rounded button">Pitch to {{ request.name }}</a></p>
+			</div>
+		</div>
+
+		<hr>
+	</li>
+
+	<li><a class="secondary button"><i class="fa fa-plus"></i> Load more requests</a></li>
+</ul>

@@ -1,0 +1,33 @@
+<div class="pitch" ng-init="pitched = false" ng-show="!pitched">
+	<div class="row">
+		<div class="small-12 columns">
+			<img src="http://placehold.it/50/50" class="round" alt=""> <em>{{request.name}}</em>
+		</div>
+		<div class="small-12 columns">
+			<h4><strong>{{request.title}}</strong></h4>
+			<p><strong>Skills required:</strong> Rural Sales and Marketing, Financial Planning, Making Coffee</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="small-12 columns">
+			<p><small>Sell yourself in 100 words or less:</small></p>
+			<textarea name="" id="" cols="30" rows="5"></textarea>
+			<button class="button" ng-click="pitched = true">OK</button>
+		</div>
+	</div>
+</div>
+
+<div class="confirm" ng-show="pitched">
+	<div class="row">
+		<div class="small-2 columns"><i class="fa fa-check-circle-o fa-2x"></i></div>
+		<div class="small-10 columns">
+			<h3>Cool beans!</h3>
+			<p>You successfully pitched to {{ request.name }}. They've been notified by email.</p>
+		</div>
+		<div class="small-12 columns">
+			<p><a ng-click="$close()" class="button">Back to open pitches</a></p>
+		</div>
+	</div>
+</div>
+
+<a class="close-reveal-modal" ng-click="$close()">&#215;</a>

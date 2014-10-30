@@ -10,19 +10,21 @@
  */
 angular
   .module('advmPrototypeApp', [
-    'ngRoute'
+    'ui.router',
+    'mm.foundation'
   ])
-  .config(function ($routeProvider) {
-    $routeProvider
-      .when('/', {
+  .config(function ($stateProvider, $urlRouterProvider) {
+
+    $urlRouterProvider.otherwise("/");
+
+    $stateProvider
+      .state('home', {
+        url: '/',
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
-      })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
-      })
-      .otherwise({
-        redirectTo: '/'
       });
+  })
+
+  .run(function ($rootScope, $state){
+    $rootScope.$state = $state;
   });
